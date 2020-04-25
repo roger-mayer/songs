@@ -1,4 +1,6 @@
 import React from "react";
+import { selectSong } from '../actions';
+import reducers from '../reducers';
 
 const App = () =>{
   return <div>App</div>;
