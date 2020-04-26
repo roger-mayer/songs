@@ -4,8 +4,16 @@ import { connect } from 'react-redux';
 //class-based component
 class SongList extends Component {
     render() {
+        console.log(this.props);
         return <div>SongList</div>
     }
 }
 
-export default connect()(SongList);
+//always pass state and return object
+const mapStateToProps = (state) => {
+    return {
+        songs: state.songs
+    };
+};
+
+export default connect(mapStateToProps)(SongList);
