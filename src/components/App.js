@@ -1,14 +1,18 @@
 import React from "react";
 import SongList from './SongList';
-import { selectSong } from '../actions';
+import {selectSong} from '../actions';
 import reducers from '../reducers';
 
-const App = () =>{
-  return (
-      <div>
-        <SongList />
-      </div>
-  );
+const App = () => {
+    return (
+        <div className="ui container grid">
+            <div className="ui row">
+                <div className="column eight wide">
+                    <SongList/>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default App;
