@@ -12,6 +12,7 @@ const songReducer = () => {
   ];
 };
 
+//receives info from action index.js
 const selectedSongReducer = (selectedSong = null, action) => {
   if (action.type === 'SONG_SELECTED') {
       return action.payload;
