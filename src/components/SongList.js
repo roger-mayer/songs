@@ -35,6 +35,7 @@ const mapStateToProps = (state) => {
     };
 };
 
+//automatically runs dispatch function
 export default connect(mapStateToProps,
     { selectSong }
     )(SongList);
