@@ -5,7 +5,7 @@ import { selectSong} from "../actions";
 //class-based component
 class SongList extends Component {
     renderList(){
-        return this.props.songs.map((song) =>{
+        return this.props.songs.map(song =>{
            return (
              //list of elements
              <div className="item" key={song.title}>
@@ -36,6 +36,7 @@ const mapStateToProps = (state) => {
 };
 
 //automatically runs dispatch function
-export default connect(mapStateToProps,
+export default connect(
+    mapStateToProps,
     { selectSong }
     )(SongList);

@@ -1,8 +1,8 @@
 import React from "react";
 import SongList from './SongList';
 import SongDetail from "./SongDetail";
-import {selectSong} from '../actions';
-import reducers from '../reducers';
+// import {selectSong} from '../actions';
+// import reducers from '../reducers';
 
 const App = () => {
     return (
