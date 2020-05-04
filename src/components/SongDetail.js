@@ -22,3 +22,5 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps)(SongDetail);
+
+//starting new redux app
